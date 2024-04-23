@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+     #result {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+            color: #6e07eb;
+     }
+</style>
 <body>
     <h1>Calculator</h1>
     <input type = "number" id = "num1" placeholder="Enter the first number">
@@ -41,7 +50,7 @@
                 default:Doresult = 'Invalid operation'
             } 
   
-            
+
             document.getElementById('result').textContent = `Result: ${result}`;
         }
     </script>
