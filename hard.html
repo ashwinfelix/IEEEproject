@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <input type = "number" id = "num1" placeholder="Enter the first number">
+    <input type="number" id = "num2" placeholder="Enter the second number"><br>
+    <button onclick="Do('add')">Add</button>
+    <button onclick="Do('subtract')">Subtract</button>
+    <button onclick="Do('multiply')">Multiply</button>
+    <button onclick="Do('divide')">Divide</button>
+    <div id = 'result'></div>
+
+    <script>
+        function Do(operation){
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            let result;
+            switch(operation) {
+                case 'add':
+                    result = num1 + num2;
+                    break;
+                case 'subtract':
+                    result = num1 - num2;
+                    break;
+                case 'multiply':
+                    result = num1 * num2;
+                    break;
+                case 'divide':
+                    if (num2 !== 0){
+                        result = num1/num2;
+                    }    
+                    else{
+                        result = 'Invalid numbers';
+                    }
+                    break;
+                default:Doresult = 'Invalid operation'
+            }
+
+            document.getElementById('result').textContent = `Result: ${result}`;
+        }
+    </script>
+</body>
+</html>
