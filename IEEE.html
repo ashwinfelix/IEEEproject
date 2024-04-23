@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .box1{
+            height: 500px;
+            width: 500px;
+            background-color: blue;
+            margin-top: 50px;
+        }
+
+        .box2{
+            height: 500px;
+            width: 500px;
+            background-color: green;
+            padding-top: 50px;
+            margin-left:50px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="box1">
+            <h1>
+                The margin property applies the style to outside of the box1 div with respect to the window.
+            </h1>
+        </div>
     
+        <div class="box2">
+            <h1>
+                While padding property applies the style to the content of the div with respect to the div.
+            </h1>
+        </div>
+    </div>
+   
 </body>
 </html>
